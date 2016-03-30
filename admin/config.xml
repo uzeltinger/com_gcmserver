@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="General" label="General">		
+		<field name="apikey" default="1" label="apikey" description="">
+		</field>					
+	</fieldset>	
+	<fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC" >
+		<field name="rules" type="rules" label="JCONFIG_PERMISSIONS_LABEL" class="inputbox" filter="rules" component="com_gcmserver" section="component" />
+	</fieldset>	
+</config>
