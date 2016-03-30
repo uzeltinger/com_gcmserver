@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="id" type="text" label="JGLOBAL_FIELD_ID_LABEL" description="JGLOBAL_FIELD_ID_DESC" size="10" default="0" readonly="true" class="readonly" />
+		
+		<field name="mid" type="user" label="COM_GCMSERVER_FIELD_AGENT_LABEL" description="" />
+		
+		<field name="regid" type="textarea" label="Reg Id" description="" />
+		
+		<field name="canaddproperties" type="text" label="COM_GCMSERVER_FIELD_CANADDPROPERTIES_LABEL" description="COM_GCMSERVER_FIELD_CANADDPROPERTIES_DESC" class="inputbox" size="30" />
+		
+		<field name="canaddimages" type="text" label="COM_GCMSERVER_FIELD_CANADDIMAGES_LABEL" description="COM_GCMSERVER_FIELD_CANADDIMAGES_DESC" class="inputbox" size="30" />
+	
+		<field name="name" type="text" label="COM_GCMSERVER_FIELD_NAME_LABEL" description="COM_GCMSERVER_FIELD_NAME_DESC" class="inputbox" size="30" required="true" />
+
+		<field name="alias" type="text" label="JFIELD_ALIAS_LABEL" description="JFIELD_ALIAS_DESC" class="inputbox" size="30" />	
+				
+		<field name="razon_social" type="text" label="razon social" description="razon_social" class="inputbox" size="30" />
+		<field name="nombre_fantasia" type="text" label="nombre de fantasia" description="nombre_fantasia" class="inputbox" size="30" />
+		<field name="resp_legal" type="text" label="resp. legal" description="resp_legal" class="inputbox" size="30" />
+		<field name="corredor" type="text" label="corredor inmob. resp." description="corredor" class="inputbox" size="30" />
+		<field name="matricula" type="text" label="matricula" description="matricula" class="inputbox" size="30" />
+					
+		<field name="published" type="radio" label="JPUBLISHED" description="JFIELD_PUBLISHED_DESC" class="inputbox" filter="intval" size="1" default="1" >
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>			
+		</field>	
+
+		<field name="checked_out" type="hidden" filter="unset" />
+
+		<field name="checked_out_time" type="hidden" filter="unset" />	
+		
+		<field name="address1" type="text" label="COM_GCMSERVER_FIELD_ADDRESS_LABEL" description="COM_GCMSERVER_FIELD_ADDRESS_DESC" class="inputbox" size="30" />
+		
+		<field name="pcode" type="text" label="COM_GCMSERVER_FIELD_POSTCODE_LABEL" description="COM_GCMSERVER_FIELD_POSTCODE_DESC" class="inputbox" size="30" />
+		
+		<field name="locality" type="text" label="COM_GCMSERVER_FIELD_LOCALITY_LABEL" description="" class="inputbox" size="30" />
+		
+		<field name="state" type="text" label="COM_GCMSERVER_FIELD_STATE_LABEL" description="" class="inputbox" size="30" />
+		
+		<field name="country" type="text" label="COM_GCMSERVER_FIELD_COUNTRY_LABEL" description="" class="inputbox" size="30" />
+		
+		<field name="email" type="text" label="COM_GCMSERVER_FIELD_EMAIL_LABEL" description="" class="inputbox" size="30" />
+		
+		<field name="phone" type="text" label="COM_GCMSERVER_FIELD_PHONE_LABEL" description="" class="inputbox" size="30" />
+		
+		<field name="fax" type="text" label="COM_GCMSERVER_FIELD_FAX_LABEL" description="" class="inputbox" size="30" />
+		
+		<field name="mobile" type="text" label="COM_GCMSERVER_FIELD_MOBILE_LABEL" description="" class="inputbox" size="30" />
+		
+		
+		<field name="language" type="contentlanguage" label="JFIELD_LANGUAGE_LABEL"	description="COM_CONTENT_FIELD_LANGUAGE_DESC" class="inputbox">
+			<option value="*">JALL</option>
+		</field>
+		
+		<field name="modified" type="text" label="Modificado" description="" readonly="true" class="readonly" size="30" />
+		<field name="created" type="text" label="Creado" description="" readonly="true" class="readonly" size="30" />
+		
+		
+	</fieldset>
+			
+</form>
