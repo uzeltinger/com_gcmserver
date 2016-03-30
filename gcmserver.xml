@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+	<name>com_gcmserver</name>
+	<creationDate>2016-03</creationDate>
+	<author>www.com-property.com</author>
+	<authorEmail>fabiouz@gmail.com</authorEmail>
+	<authorUrl>http://www.com-property.com</authorUrl>
+	<copyright>Copyright com-property.com</copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<version>1.20160331</version>
+	<description>Google Cloud Messaging Server for Joomla 3+ CMS</description>
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+		</sql>
+	</install>
+	<scriptfile>script.php</scriptfile>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.sql</file>
+		</sql>
+	</uninstall>
+	<updateservers>    
+    	<server type="extension" priority="2" name="Google Cloud Messaging Server Component Updates">http://www.com-property.com/update/com_gcmserver.xml</server>
+	</updateservers>
+	<media destination="com_gcmserver" folder="media">
+		<filename>index.html</filename>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>mail</folder>
+	</media>	
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>router.php</filename>
+		<filename>gcmserver.php</filename>
+		<filename>index.html</filename>
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>models</folder>		
+		<folder>views</folder>		
+	</files>
+	<languages folder="site">       
+		<language tag="en-GB">en-GB.com_gcmserver.ini</language>
+		<language tag="es-ES">es-ES.com_gcmserver.ini</language>		
+    </languages>
+	<administration>
+		<files folder="admin">
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>includes</folder>
+			<folder>models</folder>	
+			<folder>tables</folder>
+			<folder>views</folder>			
+			<filename>gcmserver.php</filename>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>			
+			<filename>index.html</filename>
+			<filename>install.sql</filename>
+			<filename>script.php</filename>	
+			<filename>uninstall.sql</filename>
+		</files>
+		<menu>COM_GCMSERVER_MENU</menu>
+		<submenu>
+            <menu view="panel">COM_GCMSERVER_MENU_PANEL</menu>
+			<menu view="products">COM_GCMSERVER_MENU_USERS</menu>
+		</submenu>
+		<languages folder="admin">
+			<language tag="en-GB">en-GB.com_gcmserver.ini</language>
+			<language tag="en-GB">en-GB.com_gcmserver.sys.ini</language>
+			<language tag="es-ES">es-ES.com_gcmserver.ini</language>
+			<language tag="es-ES">es-ES.com_gcmserver.sys.ini</language>
+		</languages>
+	</administration>
+</extension>
