@@ -23,13 +23,6 @@
 	<updateservers>    
     	<server type="extension" priority="2" name="Google Cloud Messaging Server Component Updates">http://www.com-property.com/update/com_gcmserver.xml</server>
 	</updateservers>
-	<media destination="com_gcmserver" folder="media">
-		<filename>index.html</filename>
-		<folder>css</folder>
-		<folder>images</folder>
-		<folder>js</folder>
-		<folder>mail</folder>
-	</media>	
 	<files folder="site">
 		<filename>controller.php</filename>
 		<filename>router.php</filename>
