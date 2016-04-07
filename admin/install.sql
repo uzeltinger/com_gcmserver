@@ -39,6 +39,7 @@ CREATE TABLE IF NOT EXISTS `#__gcmserver_notifications` (
   `profile_id` int(6) NOT NULL,
   `regid` varchar(1000) NOT NULL DEFAULT '',
   `collapse_key` varchar(255) NOT NULL DEFAULT '',
+  `title` varchar(255) NOT NULL DEFAULT '',
   `message` text NOT NULL,
   `type` int(1) NOT NULL DEFAULT '0',
   `show` tinyint(1) NOT NULL DEFAULT '0',
