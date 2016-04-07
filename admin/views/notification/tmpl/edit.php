@@ -90,7 +90,16 @@ $params = json_decode($params);
 					<?php echo $this->getForm()->getInput('collapse_key'); ?>
 				</div>
 			</div>
-                
+             
+             <div class="control-group">
+				<div class="control-label">
+					<?php echo $this->getForm()->getLabel('title'); ?>
+				</div>
+				<div class="controls">
+					<?php echo $this->getForm()->getInput('title'); ?>
+				</div>
+			</div>
+			
             <div class="control-group">
 				<div class="control-label">
 					<?php echo $this->getForm()->getLabel('message'); ?>
