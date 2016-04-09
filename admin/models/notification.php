@@ -161,7 +161,7 @@ $msg = array
 			(
 			'message_id' 	=> $data['id'],
 			'message' 	=> $data['message'],
-			'title'		=> 'Monte Hermoso Alquila',
+			'title'		=> $data['title'],
 			'subtitle'	=> 'This is a subtitle. subtitle',
 			'tickerText'	=> 'Ticker text here...Ticker text here...Ticker text here',
 			'vibrate'	=> 1,
