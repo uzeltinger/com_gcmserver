@@ -60,6 +60,14 @@
 			size="30" 
 		/>
 		
+		<field name="url" 
+			type="textarea" 
+			label="COM_GCMSERVER_FIELD_URL_LABEL"
+			description="COM_GCMSERVER_FIELD_URL_DESC" 
+			class="inputbox" 
+			size="30" 
+		/>
+		
 		<field name="published" type="list" label="JSTATUS"
 			description="JFIELD_PUBLISHED_DESC" class="chzn-color-state"
 			filter="intval" size="1" default="1"
