@@ -162,6 +162,7 @@ $msg = array
 			'message_id' 	=> $data['id'],
 			'message' 	=> $data['message'],
 			'title'		=> $data['title'],
+			'url'		=> $data['url'],
 			'subtitle'	=> 'This is a subtitle. subtitle',
 			'tickerText'	=> 'Ticker text here...Ticker text here...Ticker text here',
 			'vibrate'	=> 1,
