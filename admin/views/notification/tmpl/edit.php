@@ -108,7 +108,16 @@ $params = json_decode($params);
 					<?php echo $this->getForm()->getInput('message'); ?>
 				</div>
 			</div>
-                
+            
+            <div class="control-group">
+				<div class="control-label">
+					<?php echo $this->getForm()->getLabel('url'); ?>
+				</div>
+				<div class="controls">
+					<?php echo $this->getForm()->getInput('url'); ?>
+				</div>
+			</div>
+			
             <div class="control-group">
 				<div class="control-label">
 					<?php echo $this->getForm()->getLabel('published'); ?>
