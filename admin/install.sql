@@ -41,6 +41,7 @@ CREATE TABLE IF NOT EXISTS `#__gcmserver_notifications` (
   `collapse_key` varchar(255) NOT NULL DEFAULT '',
   `title` varchar(255) NOT NULL DEFAULT '',
   `message` text NOT NULL,
+  `url` varchar(1000) NOT NULL DEFAULT '',
   `type` int(1) NOT NULL DEFAULT '0',
   `show` tinyint(1) NOT NULL DEFAULT '0',
   `phone` varchar(20) NOT NULL DEFAULT '',
