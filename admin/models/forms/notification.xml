@@ -61,7 +61,7 @@
 		/>
 		
 		<field name="url" 
-			type="textarea" 
+			type="text" 
 			label="COM_GCMSERVER_FIELD_URL_LABEL"
 			description="COM_GCMSERVER_FIELD_URL_DESC" 
 			class="inputbox" 
