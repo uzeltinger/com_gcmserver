@@ -142,6 +142,32 @@ $params = json_decode($params);
 					
 		</div>
 	</div>
+	<div class="row-fluid form-horizontal-desktop">
+    <div class="span12">
+    	<?php 
+		if($this->item->result)
+		{
+		echo 'Response';
+		$result = json_decode($this->item->result);		
+		echo '<br>';
+		echo 'multicast_id: '.$result->multicast_id;
+		echo '<br>';
+		echo 'success: '.$result->success;
+		echo '<br>';
+		echo 'failure: '.$result->failure;
+		echo '<br>';
+		echo 'canonical_ids: '.$result->canonical_ids;
+		echo '<br>Results';
+		foreach($result->results as $resultado)
+			{
+			echo '<br>message_id: '.$resultado->message_id;
+			}			
+		echo '<br>';
+		echo '<br>';		
+		}
+		?>
+    </div>
+</div>
 </div>
 
 
