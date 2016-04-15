@@ -57,6 +57,30 @@ CREATE TABLE IF NOT EXISTS `#__gcmserver_notifications` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
+CREATE TABLE IF NOT EXISTS `#__gcmserver_notification_received` (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `notification_id` int(6) NOT NULL,
+  `topic_id` int(6) NOT NULL,
+  `profile_id` int(6) NOT NULL,
+  `regid` varchar(1000) NOT NULL DEFAULT '',
+  `collapse_key` varchar(255) NOT NULL DEFAULT '',
+  `title` varchar(255) NOT NULL DEFAULT '',
+  `message` text NOT NULL,
+  `type` int(1) NOT NULL DEFAULT '0',
+  `show` tinyint(1) NOT NULL DEFAULT '0',
+  `phone` varchar(20) NOT NULL DEFAULT '',
+  `published` tinyint(1) NOT NULL DEFAULT '0',
+  `ordering` int(3) NOT NULL DEFAULT '0',
+  `checked_out` int(6) NOT NULL DEFAULT '0',
+  `checked_out_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `created` datetime NOT NULL,
+  `modified` datetime NOT NULL,
+  `sent` datetime NOT NULL,
+  `language` char(7) NOT NULL,
+  `result` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
 CREATE TABLE IF NOT EXISTS `#__gcmserver_topics` (
   `id` int(6) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL DEFAULT '',
