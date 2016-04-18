@@ -40,6 +40,7 @@ class GcmserverControllerGcmserver extends JControllerForm
 		$dataSave['id'] = $profile->id;
 		}else{
 		$dataSave['id'] = 0;
+		$dataSave['published'] = 1;
 		}	
 	
 	$dataSave['regid'] = $regid;
