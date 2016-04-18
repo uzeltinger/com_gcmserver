@@ -68,6 +68,14 @@
 			size="30" 
 		/>
 		
+		<field name="urlimage" 
+			type="text" 
+			label="COM_GCMSERVER_FIELD_URLIMAGE_LABEL"
+			description="COM_GCMSERVER_FIELD_URLIMAGE_DESC" 
+			class="inputbox" 
+			size="30" 
+		/>
+		
 		<field name="published" type="list" label="JSTATUS"
 			description="JFIELD_PUBLISHED_DESC" class="chzn-color-state"
 			filter="intval" size="1" default="1"
