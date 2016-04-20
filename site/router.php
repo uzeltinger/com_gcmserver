@@ -139,7 +139,7 @@ if($useMenuItem)
 				$dataUrl = $this->getDataUrl();
 				if($dataUrl['useDataInUrl'])
 					{
-					$vars['data']	= str_replace(':', '-',$segments[0]);
+					
 					$vars['id']	= $segments[1];	
 					$dataVars = $this->getDataVars($vars['data']);				
 					foreach($dataVars as $k=>$v)
