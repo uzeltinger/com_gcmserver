@@ -147,9 +147,6 @@ return $response;
 	$id = $this->input->get('id');
 	$regid = $this->input->get('regid');
 	$message = $this->input->get('message');
-	//$post = $input->get('post');
-	//print_r($post);	
-	//print_r($_POST);	
 
 	$model = $this->getModel('notification');	
 	
