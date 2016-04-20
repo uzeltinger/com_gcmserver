@@ -82,12 +82,12 @@ class GcmserverModelNotifications extends JModelList
 		
 		// Join over the Agent parent
 		$query->select('ag.name AS profile_name');
-		$query->join('LEFT', '`#__gcmserver_profiles` AS ag ON ag.id = a.profile_id');
+		$query->join('LEFT', '#__gcmserver_profiles AS ag ON ag.id = a.profile_id');
 		
 		
 		// Join over the Agent parent
 		$query->select('t.name AS topic_name');
-		$query->join('LEFT', '`#__gcmserver_topics` AS t ON t.id = a.topic_id');
+		$query->join('LEFT', '#__gcmserver_topics AS t ON t.id = a.topic_id');
 		
 	
 		// Filter by published state
