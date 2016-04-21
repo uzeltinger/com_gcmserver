@@ -118,6 +118,15 @@ $params = json_decode($params);
 				</div>
 			</div>
 			
+			<div class="control-group">
+				<div class="control-label">
+					<?php echo $this->getForm()->getLabel('urlimage'); ?>
+				</div>
+				<div class="controls">
+					<?php echo $this->getForm()->getInput('urlimage'); ?>
+				</div>
+			</div>
+			
             <div class="control-group">
 				<div class="control-label">
 					<?php echo $this->getForm()->getLabel('published'); ?>
