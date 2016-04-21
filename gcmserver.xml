@@ -7,7 +7,7 @@
 	<authorUrl>http://www.com-property.com</authorUrl>
 	<copyright>Copyright com-property.com</copyright>
 	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
-	<version>1.20160331</version>
+	<version>1.20160420</version>
 	<description>Google Cloud Messaging Server for Joomla 3+ CMS</description>
 	<install>
 		<sql>
