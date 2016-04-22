@@ -14,7 +14,9 @@
 		<field name="name" type="text" label="COM_GCMSERVER_FIELD_NAME_LABEL" description="COM_GCMSERVER_FIELD_NAME_DESC" class="inputbox" size="30" required="true" />
 
 		<field name="alias" type="text" label="JFIELD_ALIAS_LABEL" description="JFIELD_ALIAS_DESC" class="inputbox" size="30" />	
-				
+		<field name="manufacturer" type="text" label="COM_GCMSERVER_FIELD_MANUFACTURER_LABEL" description="COM_GCMSERVER_FIELD_MANUFACTURER_DESC" class="inputbox" size="30" required="true" />
+		<field name="model" type="text" label="COM_GCMSERVER_FIELD_MODEL_LABEL" description="COM_GCMSERVER_FIELD_MODEL_DESC" class="inputbox" size="30" required="true" />
+		<field name="androidversion" type="text" label="COM_GCMSERVER_FIELD_ANDROIDVERSION_LABEL" description="COM_GCMSERVER_FIELD_ANDROIDVERSION_DESC" class="inputbox" size="30" required="true" />		
 		<field name="razon_social" type="text" label="razon social" description="razon_social" class="inputbox" size="30" />
 		<field name="nombre_fantasia" type="text" label="nombre de fantasia" description="nombre_fantasia" class="inputbox" size="30" />
 		<field name="resp_legal" type="text" label="resp. legal" description="resp_legal" class="inputbox" size="30" />
