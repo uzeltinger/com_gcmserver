@@ -109,26 +109,26 @@ $params = json_decode($params);
             
              <div class="control-group">
 				<div class="control-label">
-					<?php echo $this->getForm()->getLabel('razon_social'); ?>
+					<?php echo $this->getForm()->getLabel('manufacturer'); ?>
 				</div>
 				<div class="controls">
-					<?php echo $this->getForm()->getInput('razon_social'); ?>
+					<?php echo $this->getForm()->getInput('manufacturer'); ?>
 				</div>
 			</div>
              <div class="control-group">
 				<div class="control-label">
-					<?php echo $this->getForm()->getLabel('nombre_fantasia'); ?>
+					<?php echo $this->getForm()->getLabel('model'); ?>
 				</div>
 				<div class="controls">
-					<?php echo $this->getForm()->getInput('nombre_fantasia'); ?>
+					<?php echo $this->getForm()->getInput('model'); ?>
 				</div>
 			</div>
              <div class="control-group">
 				<div class="control-label">
-					<?php echo $this->getForm()->getLabel('resp_legal'); ?>
+					<?php echo $this->getForm()->getLabel('androidversion'); ?>
 				</div>
 				<div class="controls">
-					<?php echo $this->getForm()->getInput('resp_legal'); ?>
+					<?php echo $this->getForm()->getInput('androidversion'); ?>
 				</div>
 			</div>
              <div class="control-group">
