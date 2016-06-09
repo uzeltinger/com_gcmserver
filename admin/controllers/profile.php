@@ -27,7 +27,7 @@ class GcmserverControllerProfile extends JControllerForm
 	protected function allowAdd($data = array())
 	{
 	$user = JFactory::getUser();
-	$allow = $user->authorise('core.admin', 'com_gcmserver');		
+	$allow = $user->authorise('core.manage', 'com_gcmserver');		
 	return $allow;
 	}
 	
@@ -38,12 +38,12 @@ class GcmserverControllerProfile extends JControllerForm
 	$recordId	= (int) isset($data[$key]) ? $data[$key] : 0;
 	$userId		= $user->get('id');
 	
-	if($user->authorise('core.admin', 'com_gcmserver'))
+	if($user->authorise('core.manage', 'com_gcmserver'))
 		{
 		$allow = true;
 		}else{
 		
-		$allow = $user->authorise('core.manage.product', 'com_gcmserver');		
+		$allow = $user->authorise('core.manage', 'com_gcmserver');		
 
 		if($allow)
 			{
