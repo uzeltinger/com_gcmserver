@@ -16,15 +16,18 @@ class GcmserverHelper //extends JHelperContent
 	$user = JFactory::getUser();
 	$userId	= $user->get('id');	
 	//$manageProduct = $user->authorise('core.manage.product', 'com_gcmserver');	
-	$coreAdmin = $user->authorise('core.admin', 'com_gcmserver');
+	$coreAdmin = $user->authorise('core.manage', 'com_gcmserver');
 
-	if($coreAdmin)
-		{
+	if (JFactory::getUser()->authorise('core.admin', 'com_gcmserver')) {	
 		JHtmlSidebar::addEntry(
 			JText::_('COM_GCMSERVER_MENU_PANEL'),
 			'index.php?option=com_gcmserver&view=panel',
 			$vName == 'panel'
-		);		
+		);	
+	}
+
+	if($coreAdmin)
+		{
 		JHtmlSidebar::addEntry(
 			JText::_('COM_GCMSERVER_MENU_PROFILES'),
 			'index.php?option=com_gcmserver&view=profiles',
