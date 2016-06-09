@@ -9,9 +9,6 @@
 # Technical Support: www.com-property.com/forum-v4
 */
 
-/*
-http://localhost/montehermosoalquila/webapp/index.php?option=com_gcmserver&task=gcmserver.register&id=1
-*/
 // no direct access
 defined( '_JEXEC' ) or die( 'Restricted access' );
 
@@ -31,7 +28,9 @@ class GcmserverControllerGcmserver extends JControllerForm
 	$regid = $this->input->getString('regid');
 	$username = $this->input->getString('username');
 	$message = $this->input->getString('message');
-	
+	$manufacturer = $this->input->getString('manufacturer');
+	$phonemodel = $this->input->getString('model');
+	$androidVersion = $this->input->getString('androidVersion');
 	$model = $this->getModel('profile');
 	$profile = $model->getProfileDatabyRegid($regid);
 	
@@ -41,11 +40,15 @@ class GcmserverControllerGcmserver extends JControllerForm
 		}else{
 		$dataSave['id'] = 0;
 		$dataSave['published'] = 1;
+		$dataSave['email'] = $username;
 		}	
 	
 	$dataSave['regid'] = $regid;
 	$dataSave['name'] = $username;
-	
+	$dataSave['manufacturer'] = $manufacturer;
+	$dataSave['model'] = $phonemodel;
+	$dataSave['androidversion'] = $androidVersion;
+
 	if (!$model->store($dataSave))		
 	{		
 	echo 'no save data in model';		
@@ -53,8 +56,8 @@ class GcmserverControllerGcmserver extends JControllerForm
 	echo 'SUCESS';
 	if($username == 'username')
 		{		
-		$profileSaved = $model->getProfileDatabyRegid($regid);
-		$response = $this->enviarNotificacionCambiarUsername($profileSaved);
+		//$profileSaved = $model->getProfileDatabyRegid($regid);
+		//$response = $this->enviarNotificacionCambiarUsername($profileSaved);
 		//print_r($response);
 		}
 	}
