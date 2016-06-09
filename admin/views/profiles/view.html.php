@@ -26,6 +26,14 @@ class GcmserverViewProfiles extends JViewLegacy
 		{
 			gcmserverHelper::addSubmenu('profiles');
 		}
+		
+		$canDo	= GcmserverHelper::getActions();		
+		if (!$canDo->get('core.manage')) {
+		$app =& JFactory::getApplication();
+		$msg = JText::_('USER ERROR AUTHENTICATION FAILED').' : '. $this->Profile->name;
+		$app->Redirect(JRoute::_('index.php?option=com_gcmserver', $msg));	
+		}
+		
 		$app = JFactory::getApplication();	
 		
 		$this->items		= $this->get('Items');
@@ -46,7 +54,7 @@ class GcmserverViewProfiles extends JViewLegacy
 		}
 		
 		$canDo	= gcmserverHelper::getActions();
-		if (!$canDo->get('core.admin')) {
+		if (!$canDo->get('core.manage')) {
 		$msg = JText::_('USER ERROR AUTHENTICATION FAILED').' : '. $this->Profile->name;
 			$app->Redirect(JRoute::_('index.php?option=com_gcmserver', false));	
 		}
