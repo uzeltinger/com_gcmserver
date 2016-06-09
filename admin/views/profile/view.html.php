@@ -25,7 +25,7 @@ class GcmserverViewProfile extends JViewLegacy
 		$this->Profile = $this->get('Profile');	
 		
 		$canDo	= gcmserverHelper::getActions();
-		if ($canDo->get('core.admin')) 
+		if ($canDo->get('core.manage')) 
 		{
 			$this->iAmAdmin=true;
 			}else{
@@ -73,7 +73,7 @@ class GcmserverViewProfile extends JViewLegacy
 		
 		JToolBarHelper::apply('profile.apply', 'JTOOLBAR_APPLY');
 			JToolBarHelper::save('profile.save', 'JTOOLBAR_SAVE');
-			if ($canDo->get('core.admin')) {
+			if ($canDo->get('core.manage')) {
 			JToolBarHelper::addNew('profile.save2new', 'JTOOLBAR_SAVE_AND_NEW');
 			}
 			if (empty($this->item->id))  {
