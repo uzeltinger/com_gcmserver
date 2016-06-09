@@ -20,7 +20,7 @@ class GcmserverViewNotification extends JViewLegacy
 	public function display($tpl = null)
 	{
 		$canDo	= GcmserverHelper::getActions();		
-		if (!$canDo->get('core.admin')) {
+		if (!$canDo->get('core.manage')) {
 		$app =& JFactory::getApplication();
 		$msg = JText::_('USER ERROR AUTHENTICATION FAILED').' : '. $this->Profile->name;
 		$app->Redirect(JRoute::_('index.php?option=com_gcmserver', $msg));	
